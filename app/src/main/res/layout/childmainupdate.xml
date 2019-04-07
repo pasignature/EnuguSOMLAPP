@@ -1,0 +1,247 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#9cdcf7"
+    tools:context="com.enugusomlapp.enugusomlapp.ChildMainUpdate">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#9adcf7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#e8e8e7"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/childregistration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/childregistration"
+                android:textColor="#2582C5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#9bdcf7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/childregistration_OP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/childregistrationOP"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#2582C5"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/OP_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#cf0306"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout >
+            <TextView
+                android:id="@+id/healthfacility_fullnameLB"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:hint="@string/fullname"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+            <EditText
+                android:id="@+id/childfullname"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#f3f3f3"
+                android:hint="@string/fullname"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+            <TextView
+                android:id="@+id/healthfacility_sexLB"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:hint="@string/sex_prompt"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+            <Spinner
+                android:id="@+id/child_sex"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:entries="@array/sex_array"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:prompt="@string/sex_prompt"
+                android:spinnerMode="dropdown" />
+            <TextView
+                android:id="@+id/healthfacility_dobLB"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:hint="@string/dob"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <EditText
+                android:id="@+id/child_dob"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#f3f3f3"
+                android:hint="@string/dob"
+                android:layout_marginBottom="10dp"
+                android:inputType="date"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/healthfacility_bloodgroupLB"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:hint="@string/bloodgroup"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+            <EditText
+                android:id="@+id/child_bloodgroup"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#f3f3f3"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/bloodgroup"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+            <TextView
+                android:id="@+id/healthfacility_genotypeLB"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:hint="@string/genotype"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+            <EditText
+                android:id="@+id/child_genotype"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="#f3f3f3"
+                android:hint="@string/genotype"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+            <TextView
+                android:id="@+id/healthfacility_HIVstatus_promptLB"
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="50"
+                android:hint="@string/HIVstatus_prompt"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+            <Spinner
+                android:id="@+id/child_HIVstatus"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:entries="@array/HIVstatus_array"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:prompt="@string/HIVstatus_prompt"
+                android:spinnerMode="dropdown" />
+
+            <!--<ProgressBar
+                android:id="@+id/progress_Bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#faa519"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!-- SUBMIT AND CANCEL BUTTONS SECTION-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--submit button -->
+            <Button
+                android:id="@+id/childsubmit_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="120dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/selector_xml_btn_green"
+                android:onClick="onClick"
+                android:text="@string/submitbtn"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!--cancel button -->
+            <Button
+                android:id="@+id/childcancel_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="120dp"
+                android:layout_height="38dp"
+                android:background="@drawable/selector_xml_btn_red"
+                android:onClick="onClick"
+                android:text="@string/cancelbtn"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout >
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

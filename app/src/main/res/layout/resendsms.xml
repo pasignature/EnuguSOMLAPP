@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/login_bg"
+    android:padding="10dp"
+    tools:context="com.enugusomlapp.enugusomlapp.ResendSMS">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/homelogo"
+            android:layout_width="167dp"
+            android:layout_height="184dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@android:string/ok"
+            app:srcCompat="@mipmap/resendsms" />
+
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/sendSMS_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/enterphpone"
+            android:drawableStart="@mipmap/account"
+            android:drawableLeft="@mipmap/account"
+            android:hint="@string/enterphpone"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="25dp"
+            android:textColorHint="#999"/>
+
+        <!-- SUBMIT AND CANCEL BUTTONS SECTION-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!--submit button -->
+            <Button
+                android:id="@+id/resendsmsBTN"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_xml_btn_green"
+                android:onClick="onClick"
+                android:text="@string/resendsms"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!--cancel button -->
+            <Button
+                android:id="@+id/cancel_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_xml_btn_red"
+                android:onClick="onClick"
+                android:text="@string/cancelsearchbtn"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@mipmap/poweredbyomstok2"
+            android:contentDescription="@string/okbtn" />
+
+    </LinearLayout>
+</ScrollView>

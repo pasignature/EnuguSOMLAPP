@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@mipmap/main_bg"
+android:orientation="vertical"
+android:paddingStart="40dp"
+android:paddingLeft="40dp"
+android:paddingEnd="40dp"
+android:paddingRight="40dp"
+android:weightSum="1"
+tools:context="com.enugusomlapp.enugusomlapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp">
+
+    <ImageView
+        android:id="@+id/homelogo"
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:layout_gravity="center"
+        android:contentDescription="@android:string/ok"
+        app:srcCompat="@mipmap/homelogo" />
+
+    <TextView
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="@string/textaction"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/reg_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.09"
+        android:background="@drawable/selector_xml_btn_skyblue"
+        android:onClick="onClick"
+        android:text="@string/button_register"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/search_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.09"
+        android:background="@drawable/selector_xml_btn_red"
+        android:onClick="onClick"
+        android:text="@string/searchbutton"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/resendsmsBTN"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.09"
+        android:background="@drawable/selector_xml_btn_yellow"
+        android:onClick="onClick"
+        android:text="@string/resendsms"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/upload_Button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.09"
+        android:background="@drawable/selector_xml_btn_green"
+        android:onClick="onClick"
+        android:text="@string/uploadButton"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal" />
+
+        <Button
+            android:id="@+id/exitApp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/user_profile_image_background_greenstroke"
+            android:onClick="onClick"
+            android:text="@string/exitApp"
+            android:textColor="#f90101"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@android:string/ok"
+        app:srcCompat="@mipmap/poweredbyomstok2" />
+
+
+</LinearLayout>
+</ScrollView>

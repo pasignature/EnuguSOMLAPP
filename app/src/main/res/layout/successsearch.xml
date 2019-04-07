@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context="com.enugusomlapp.enugusomlapp.SuccessSearchActivity">
+
+    <ImageView
+        android:id="@+id/homeimage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/home"
+        android:onClick="onClick"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/homeicon" />
+
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-90dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="@string/profiletitle"
+        android:textColor="#030303"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/patientcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-90dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fa020a"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="#fafafa"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignTop="@+id/patientcode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="3dp"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/names"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_horizontal"
+                android:textColor="#0e8905"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+                <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" >
+                    <!-- couple texts layout-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:background="#fafafa"
+                        android:orientation="horizontal">
+
+                        <!-- start text labbel-->
+                        <TextView
+                            android:id="@+id/profiledatum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingBottom="15dp"
+                            android:textColor="#050505"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!-- couple texts layout-->
+                </ScrollView>
+
+
+            <!-- couple texts layout for main form-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <!-- start text labbel-->
+                <TextView
+                    android:id="@+id/Add_visit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="@string/addvisit"
+                    android:textColor="#03810a"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/View_visit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="@string/viewvisit"
+                    android:textColor="#03810a"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <!-- end text value-->
+
+            </LinearLayout>
+            <!-- couple texts layout for main form-->
+
+
+            <!-- couple texts layout for main form-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <!-- start text labbel-->
+                <TextView
+                    android:id="@+id/Addchild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="@string/addchild"
+                    android:textColor="#ba02b4"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <!-- end text value-->
+                <TextView
+                    android:id="@+id/open_childdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/openchilddata"
+                    android:textColor="#e6a901"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Editdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#061cc2"
+                    android:textSize="17sp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/editdata"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/deldata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:clickable="true"
+                    android:text="@string/deldata"
+                    android:textColor="#df0303"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <!-- couple texts layout for main form-->
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/user_profile_photoM"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/user_profile_image_background"
+        android:contentDescription="@string/successdesc"
+        android:src="@mipmap/userm"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/user_profile_photoF"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/user_profile_image_background"
+        android:contentDescription="@string/successdesc"
+        android:src="@mipmap/userf"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/user_profile_photoN"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/user_profile_image_background"
+        android:contentDescription="@string/successdesc"
+        android:src="@mipmap/usericon"
+        android:visibility="gone"/>
+
+</RelativeLayout>
